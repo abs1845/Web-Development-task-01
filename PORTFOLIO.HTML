@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            font-family:system-ui; 
+            color: whitesmoke;
+        }
+
+        nav{
+            display:flex;
+            align-items: center;
+            justify-content:space-between;
+            padding:14px
+        }
+        
+        nav::before{
+            content:"";
+            background-image:url("PORTFOLIO.ABS.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 133%;
+            position: absolute;
+            top:0px;
+            left:0px;
+            z-index: -1;
+            height: 102vh;
+            width: 100% ;
+            opacity: 94%;
+            background-position-x:-298px;
+        }
+
+        .navbar-left{
+            display:flex;
+            align-items: center;
+            justify-content:center;
+        }
+
+        .logo{
+            font: size 25px;
+            font-weight:700px;
+            font-family:sans-serif; 
+        }
+
+        .menu{
+            margin:0px 19px;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+
+        }
+
+        ul{
+            display: flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        ul>li{
+            margin:0px 12px;
+            list-style-type:none;
+            cursor:pointer;
+            font-size:12px;
+            border:2px solid transparent;
+            padding: 5px;
+
+        }
+
+        ul>li:hover{
+            border:2px solid white;
+            border-radius: 4px;
+        }
+
+        .section-home{
+            display:flex;
+            height:90vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        h2{
+            font-size: 4rem;
+            font-weight: 100;
+            font-family: sans-serif;
+        }
+
+        p.home{
+            text-align: center;
+            width: 50%;
+        }
+
+        .btn{
+            background: transparent;
+            border: (2px solid black);
+            border-radius: 7px;
+            margin: 17px 2px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: white;
+            color: black;
+        }
+     
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="navbar-left">
+            <div class="logo">
+                PORTFOLIO
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <li>HOME</li>
+                    <li>WORK</li>
+                    <li>PROJECTS</li>
+                    <li>SERVICES</li>
+                    <li>ABOUT</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home section-->
+   
+        <section class="section-home">
+            <span>Hey,I'm Anurag Shelar</span>
+            <h2>
+                I'm a Web Developer.
+            </h2>
+
+            <p class="home">
+                Self-motivated and hardworking fresher seeking for an opprtunity to work in challenging enviroment to <br> prove my skills and utilize
+                my knowledge & intelligence in the growth of the organization.
+            </p>
+
+            <div class="button-group">
+                <button class ="btn">
+                   Download CV
+                </button>
+                <button class ="btn">
+                    Hire Me
+                </button>
+            </div>
+            
+        </section>    
+    
+</body>
+</html>
